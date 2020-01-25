@@ -5,12 +5,14 @@ import store from './src/redux/store/store';
 // import rootReducer from './src/redux/reducers/rootReducer'
 // import {connect} from 'react-redux';
 import Counter from './src/components/Counter';
+import UsersList from './src/components/UsersList';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Counter />
+      <View>
+        {/* <Counter /> */}
+        <UsersList />
       </View>
     </Provider>
   );
